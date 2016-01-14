@@ -54,7 +54,9 @@ for j in range(0,3):
 it = iter(j1)
 for each in range(0, 64):
     for ea in range(0, 8):
-        fwrite.write(' ')
+        for e in range(0,8-len(j1[1])):
+            fwrite.write(' ')
+        
         fwrite.write(it.next())
         fwrite.write('.')
 
